@@ -4,6 +4,10 @@ Blockly.Python['mqtt_connect'] = function(block) {
   var value_client_id = Blockly.Python.valueToCode(block, 'client_id', Blockly.Python.ORDER_ATOMIC);
   var value_username = Blockly.Python.valueToCode(block, 'username', Blockly.Python.ORDER_ATOMIC) || 'None';
   var value_password = Blockly.Python.valueToCode(block, 'password', Blockly.Python.ORDER_ATOMIC) || 'None';
+
+  Blockly.Python.uploadModule("/modules/umqttsimple.py");
+  Blockly.Python.definitions_['from_umqttsimple_import_mqttclient'] = 'from umqttsimple import MQTTClient';
+  
   var code = `client = MQTTClient(${value_client_id}, ${value_host}, ${value_port}, ${value_username}, ${value_password}); client.connect()\n`;
   return code;
 };

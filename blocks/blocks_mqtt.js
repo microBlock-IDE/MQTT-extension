@@ -84,7 +84,7 @@ Blockly.defineBlocksWithJsonArray(
   ],
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 180,
+  "colour": "#F39C12",
   "tooltip": "",
   "helpUrl": ""
 },
@@ -108,7 +108,7 @@ Blockly.defineBlocksWithJsonArray(
   "type": "mqtt_get_topic",
   "message0": "MQTT get receive topic",
   "output": null,
-  "colour": 180,
+  "colour": "#F39C12",
   "tooltip": "",
   "helpUrl": ""
 },
@@ -136,7 +136,7 @@ Blockly.defineBlocksWithJsonArray(
   "message0": "MQTT check message",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": 180,
+  "colour": "#F39C12",
   "tooltip": "",
   "helpUrl": ""
 }]

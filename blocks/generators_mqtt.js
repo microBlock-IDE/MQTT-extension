@@ -39,7 +39,7 @@ Blockly.Python['mqtt_subscribe'] = function(block) {
 
 Blockly.Python['mqtt_get_topic'] = function(block) {
   var code = 'topic';
-  return [code, Blockly.JavaScript.ORDER_NONE];
+  return [code, Blockly.Python.ORDER_NONE];
 };
 
 Blockly.Python['mqtt_get_number'] = function(block) {

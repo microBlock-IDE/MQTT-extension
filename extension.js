@@ -35,9 +35,12 @@
                 </block>
             `
         },
+        "mqtt_on_receive",
         "mqtt_subscribe",
+        "mqtt_get_topic",
         "mqtt_get_number",
         "mqtt_get_text",
+        "mqtt_check_msg",
         "math_number",
         "text",
         "logic_boolean"

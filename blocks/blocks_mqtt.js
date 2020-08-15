@@ -71,6 +71,24 @@ Blockly.defineBlocksWithJsonArray(
   "helpUrl": ""
 },
 {
+  "type": "mqtt_on_receive",
+  "message0": "MQTT on receive %1 %2",
+  "args0": [
+    {
+      "type": "input_dummy"
+    },
+    {
+      "type": "input_statement",
+      "name": "callback"
+    }
+  ],
+  "previousStatement": null,
+  "nextStatement": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
   "type": "mqtt_subscribe",
   "message0": "MQTT Subscribe topic : %1",
   "args0": [
@@ -87,8 +105,16 @@ Blockly.defineBlocksWithJsonArray(
   "helpUrl": ""
 },
 {
+  "type": "mqtt_get_topic",
+  "message0": "MQTT get receive topic",
+  "output": null,
+  "colour": 180,
+  "tooltip": "",
+  "helpUrl": ""
+},
+{
   "type": "mqtt_get_number",
-  "message0": "MQTT get number",
+  "message0": "MQTT get receive number",
   "output": [
     "Number",
     "Boolean"
@@ -99,72 +125,19 @@ Blockly.defineBlocksWithJsonArray(
 },
 {
   "type": "mqtt_get_text",
-  "message0": "MQTT get text",
+  "message0": "MQTT get receive text",
   "output": "String",
   "colour": "#F39C12",
   "tooltip": "",
   "helpUrl": ""
 },
-/*{
-  "type": "mqtt_on_connected",
-  "message0": "MQTT on Connected %1 %2",
-  "args0": [
-    {
-      "type": "input_dummy"
-    },
-    {
-      "type": "input_statement",
-      "name": "callback"
-    }
-  ],
-  "previousStatement": null,
-  "nextStatement": null,
-  "colour": "#F39C12",
-  "tooltip": "",
-  "helpUrl": ""
-},
 {
-  "type": "mqtt_config",
-  "message0": "MQTT Config %1 Host %2 Port %3 Client Id %4 Username %5 Password %6",
-  "args0": [
-    {
-      "type": "input_dummy"
-    },
-    {
-      "type": "input_value",
-      "name": "host",
-      "check": "String",
-      "align": "RIGHT"
-    },
-    {
-      "type": "input_value",
-      "name": "port",
-      "check": "Number",
-      "align": "RIGHT"
-    },
-    {
-      "type": "input_value",
-      "name": "client_id",
-      "check": "String",
-      "align": "RIGHT"
-    },
-    {
-      "type": "input_value",
-      "name": "username",
-      "check": "String",
-      "align": "RIGHT"
-    },
-    {
-      "type": "input_value",
-      "name": "password",
-      "check": "String",
-      "align": "RIGHT"
-    }
-  ],
+  "type": "mqtt_check_msg",
+  "message0": "MQTT check message",
   "previousStatement": null,
   "nextStatement": null,
-  "colour": "#F39C12",
+  "colour": 180,
   "tooltip": "",
   "helpUrl": ""
-}*/]
+}]
 );

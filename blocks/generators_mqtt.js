@@ -37,6 +37,11 @@ Blockly.Python['mqtt_subscribe'] = function(block) {
   return code;
 };
 
+Blockly.JavaScript['mqtt_get_topic'] = function(block) {
+  var code = 'topic';
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
 Blockly.Python['mqtt_get_number'] = function(block) {
   var code = 'float(msg)';
   return [code, Blockly.Python.ORDER_NONE];
@@ -46,22 +51,8 @@ Blockly.Python['mqtt_get_text'] = function(block) {
   var code = 'msg';
   return [code, Blockly.Python.ORDER_NONE];
 };
-/*
-Blockly.Python['mqtt_on_connected'] = function(block) {
-  var statements_callback = Blockly.Python.statementToCode(block, 'callback');
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
-  return code;
-};
 
-Blockly.Python['mqtt_config'] = function(block) {
-  var value_host = Blockly.Python.valueToCode(block, 'host', Blockly.Python.ORDER_ATOMIC);
-  var value_port = Blockly.Python.valueToCode(block, 'port', Blockly.Python.ORDER_ATOMIC);
-  var value_client_id = Blockly.Python.valueToCode(block, 'client_id', Blockly.Python.ORDER_ATOMIC);
-  var value_username = Blockly.Python.valueToCode(block, 'username', Blockly.Python.ORDER_ATOMIC);
-  var value_password = Blockly.Python.valueToCode(block, 'password', Blockly.Python.ORDER_ATOMIC);
-  // TODO: Assemble Python into code variable.
-  var code = '...\n';
+Blockly.Python['mqtt_check_msg'] = function(block) {
+  var code = 'client.check_msg()\n';
   return code;
 };
-*/

@@ -44,12 +44,5 @@
         "math_number",
         "text",
         "logic_boolean"
-    ],
-    scripts: [ // JavaScript file, it will add to IDE home page
-        "/blocks/blocks_mqtt.js",
-        "/blocks/generators_mqtt.js"
-	],
-	modules: [ // File will upload to Device before run main script
-        "/modules/umqttsimple.py"
-	]
+    ]
 });

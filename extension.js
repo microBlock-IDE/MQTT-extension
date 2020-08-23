@@ -1,5 +1,9 @@
 ({
     name: "MQTT", // Category Name
+    description: "Connect things via MQTT",
+    author: "microBlock",
+    category: "Communication",
+    version: "1.0.0",
     icon: "/static/icon.png", // Category icon
     color: "#F39C12", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category

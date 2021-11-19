@@ -48,5 +48,8 @@
         "math_number",
         "text",
         "logic_boolean"
+    ],
+    chip: [
+        "ESP32" // Chip support
     ]
 });

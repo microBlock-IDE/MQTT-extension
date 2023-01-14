@@ -3,7 +3,7 @@
     description: "Connect things via MQTT",
     author: "microBlock",
     category: "Communication",
-    version: "1.0.0",
+    version: "1.1.0",
     icon: "/static/icon.png", // Category icon
     color: "#F39C12", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
@@ -50,6 +50,7 @@
         "logic_boolean"
     ],
     chip: [
-        "ESP32" // Chip support
+        "ESP32", // Chip support
+        "RP2-WiFi"
     ]
 });
